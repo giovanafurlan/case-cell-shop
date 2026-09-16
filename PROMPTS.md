@@ -25,3 +25,8 @@ Id do produto (int) lista
 
 6. Help me with a component to search for phone cases at the top of the page and also filter by brand and category
 
+7. Help me implement a POST API request called `/checkout`
+- The request body must contain: the ID of the product selected by the user and the specified quantity
+- It must include error handling for scenarios such as: if a product with ID 1 has 10 units in stock and the user attempts to add more than 10 to the cart, the system must return an error message
+- The request must be triggered when the user clicks the "add to cart" button
+- It must reduce the product stock after the addition `product.stock -= quantity`
